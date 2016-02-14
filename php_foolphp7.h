@@ -64,7 +64,6 @@ ZEND_EXTERN_MODULE_GLOBALS(foolphp7)
 
 void debug(const char *file,int line,const char *func,const char* errmsg);
 
-
 #if defined(ZTS) && defined(COMPILE_DL_FOOLPHP7)
 ZEND_TSRMLS_CACHE_EXTERN();
 #endif

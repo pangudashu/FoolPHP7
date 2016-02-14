@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("foolphp7", "for foolphp7 support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("foolphp7", "enable foolphp7 support", "no");
+
+if (PHP_FOOLPHP7 != "no") {
+	EXTENSION("foolphp7", "foolphp7.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+}
+

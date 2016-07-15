@@ -77,12 +77,12 @@ PHP_FOOLPHP7_API int fool_loader_register_autoload(zval* loader) /*{{{*/
 
 	zend_fcall_info fci = {
 		sizeof(fci),
-		EG(function_table),
+		//EG(function_table),
 		spl_func_name,        //函数名
-		NULL,
+		//NULL,
 		&ret,                 //函数返回值
 		params,               //参数数组
-		NULL,                 //对象
+		//NULL,                 //对象
 		1,    
 		1                     //参数数量
 	};
